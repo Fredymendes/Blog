@@ -2,6 +2,8 @@
 Blog 
 Projet Openclassrooms
 
+<a href="https://codeclimate.com/github/Fredymendes/blog/maintainability"><img src="https://api.codeclimate.com/v1/badges/125cce556c5e3292b413/maintainability" /></a>
+
 --Création d'un blog
 
 1-- Installation
