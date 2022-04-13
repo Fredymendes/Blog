@@ -154,17 +154,17 @@ class BackendController
                 $_SESSION['warning_message'] = 'Mauvais mot de passe, veuillez recommencez';
                 header("Location: index.php?action=connect");
                 exit;
+            } elseif ($resultat['role'] === 0) {
+                    $_SESSION['message'] = 'Bienvenue Printer !';
+                    header("Location: index.php");
+                    exit;
             } else {
                 $_SESSION['idUsers'] = $resultat['idUsers'];
                 $_SESSION['pseudo'] = $resultat['pseudo'];
                 $_SESSION['role'] = $resultat['role'];
-                if ($resultat['role'] === 1) {
+                if ($resultat['role'] == 1) {
                     $_SESSION['message'] = 'Bienvenue Patron !';
                     header("Location: index.php?action=profil");
-                    exit;
-                } elseif ($resultat['role'] === 0) {
-                    $_SESSION['message'] = 'Bienvenue Printer !';
-                    header("Location: index.php");
                     exit;
                 }
             }
