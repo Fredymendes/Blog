@@ -9,6 +9,7 @@ Projet Openclassrooms
 1-- Installation
 ________________________________________________________________________
 Télécharger le dossier et mettez le sur Xaamp dans le dossier htdocs
+Télécharger le dossier et mettez le sur Waamp dans le dossier www
 
 2-- Configuration
 ________________________________________________________________________
